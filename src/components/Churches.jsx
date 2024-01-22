@@ -30,6 +30,14 @@ export const ChurchesOnline = () =>{
         loop: true,
         autoplay: true,
         gutter: 10,
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ],
     };
 
     return(
