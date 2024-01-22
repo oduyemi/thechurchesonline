@@ -24,7 +24,7 @@ const ListItem = ({ title, address }) =>{
                         <Link to="">
                         <button
                             onClick={handleLivestreamPopupOpen}
-                            className="btn btn--primary btn-sm"
+                            className="btn btn--primary btn--small"
                         >
                             Connect
                         </button>
