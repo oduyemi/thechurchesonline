@@ -37,8 +37,14 @@ export const ChurchesOnline = () =>{
                 slidesToShow: 1,
               },
             },
-          ],
-    };
+            {
+                breakpoint: 1024, 
+                settings: {
+                  slidesToShow: 2,
+                },
+              },
+            ],
+          };
 
     return(
         <Box>
