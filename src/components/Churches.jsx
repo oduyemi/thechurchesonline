@@ -1,12 +1,26 @@
+import React, { useState } from "react";
+import Modal from "react-modal";
 import { Box, Typography, Card, CardContent, CardMedia } from "@mui/material";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { LivestreamPopup } from "./LiveStreamPopUp";
 import{ Link} from "react-router-dom";
 import "../index.css"
 import "animate.css"
 
 export const ChurchesOnline = () =>{
+    const [livestreamPopupOpen, setLivestreamPopupOpen] = useState(false);
+    // const [livestreamPopupOpen, setLivestreamPopupOpen] = React.useState(false);
+
+    const handleLivestreamPopupOpen = () => {
+        setLivestreamPopupOpen(true);
+      };
+    
+      const handleLivestreamPopupClose = () => {
+        setLivestreamPopupOpen(false);
+      };
+    
     const sliderSettings = {
         dots: true,
         infinite: true,
@@ -71,13 +85,32 @@ export const ChurchesOnline = () =>{
                                     </Box>
                                     <Box className="mt-5">
                                         <Link to="">
-                                            <button className="btn btn--primary btn-wide btn--large h-full-width">
+                                            <button onClick={handleLivestreamPopupOpen} className="btn btn--primary btn-wide btn--large h-full-width">
                                                 Connect
                                             </button>
                                         </Link>
                                     </Box>
                                 </CardContent>
                                 </Card>
+                                <Modal
+                                        isOpen={livestreamPopupOpen}
+                                        onRequestClose={handleLivestreamPopupClose}
+                                        style={{
+                                        overlay: {
+                                            backgroundColor: "rgba(0, 0, 0, 0.7)",
+                                        },
+                                        content: {
+                                            top: "50%",
+                                            left: "50%",
+                                            right: "auto",
+                                            bottom: "auto",
+                                            marginRight: "-50%",
+                                            transform: "translate(-50%, -50%)",
+                                            background: "white",
+                                        },
+                                        }}
+                                    >
+                                    </Modal>
                                 </Box>
 
                                 <Box className="card-slide">
@@ -107,7 +140,7 @@ export const ChurchesOnline = () =>{
                                     </Box>
                                     <Box className="mt-5">
                                         <Link to="">
-                                            <button className="btn btn--primary btn-wide btn--large h-full-width">
+                                            <button onClick={handleLivestreamPopupOpen} className="btn btn--primary btn-wide btn--large h-full-width">
                                                 Connect
                                             </button>
                                         </Link>
@@ -142,7 +175,7 @@ export const ChurchesOnline = () =>{
                                     </Box>
                                     <Box className="mt-5">
                                         <Link to="">
-                                            <button className="btn btn--primary btn-wide btn--large h-full-width">
+                                            <button onClick={handleLivestreamPopupOpen} className="btn btn--primary btn-wide btn--large h-full-width">
                                                 Connect
                                             </button>
                                         </Link>
@@ -165,7 +198,7 @@ export const ChurchesOnline = () =>{
                                     <Typography variant="body1" gutterBottom className="card-text">
                                     The vision of the Covenant Nation is to teach Christians who they
                                     are in Christ Jesus, and how to live a victorious life in their
-                                    covenant rights and privileges. <br/><br/><br/><br/>
+                                    covenant rights and privileges. <br/><br/><br/>
                                     </Typography>
                                     <Typography variant="body1" gutterBottom className="card-text text-[#EE964B]">
                                      The Covenant Place, Iganmu, Lagos
@@ -178,7 +211,7 @@ export const ChurchesOnline = () =>{
                                     </Box>
                                     <Box className="mt-5">
                                         <Link to="">
-                                            <button className="btn btn--primary btn-wide btn--large h-full-width">
+                                            <button onClick={handleLivestreamPopupOpen} className="btn btn--primary btn-wide btn--large h-full-width">
                                                 Connect
                                             </button>
                                         </Link>
@@ -214,7 +247,7 @@ export const ChurchesOnline = () =>{
                                     </Box>
                                     <Box className="mt-5">
                                         <Link to="">
-                                            <button className="btn btn--primary btn-wide btn--large h-full-width">
+                                            <button onClick={handleLivestreamPopupOpen} className="btn btn--primary btn-wide btn--large h-full-width">
                                                 Connect
                                             </button>
                                         </Link>
@@ -249,7 +282,7 @@ export const ChurchesOnline = () =>{
                                     </Box>
                                     <Box className="mt-5">
                                         <Link to="">
-                                            <button className="btn btn--primary btn-wide btn--large h-full-width">
+                                            <button onClick={handleLivestreamPopupOpen} className="btn btn--primary btn-wide btn--large h-full-width">
                                                 Connect
                                             </button>
                                         </Link>
@@ -279,6 +312,7 @@ export const ChurchesOnline = () =>{
                     </li>
                 </ul>
             </section>
+            <LivestreamPopup open={livestreamPopupOpen} onClose={handleLivestreamPopupClose} />
         </Box>
     )
 }

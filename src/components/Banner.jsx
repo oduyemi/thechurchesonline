@@ -1,6 +1,6 @@
 
 import { Box, Typography } from "@mui/material";
-import heroImage from "../assets/ho.jpg";
+import heroImage from "../assets/home_hero.jpg";
 import { Link } from "react-router-dom";
 import "animate.css"
 

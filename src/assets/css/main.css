@@ -3139,7 +3139,7 @@ html.no-csstransitions .hero-content {
 }
 
 .page-header--contact {
-  background-image: url(../hero.jpg);
+  background-image: url(../contact_hero.jpg);
 }
 
 .page-header--events {
@@ -3153,7 +3153,7 @@ html.no-csstransitions .hero-content {
 }
 
 .page-header--lists {
-  background-image: url(../hero.jpg);
+  background-image: url(../lists_hero.jpg);
 }
 
 .page-header__content {
