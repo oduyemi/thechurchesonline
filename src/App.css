@@ -322,4 +322,8 @@ img {
     top: -1.5%;
     font-size: smaller;
   }
+  .footer__heading{
+    position: relative;
+    left: 0%
+}
 }
