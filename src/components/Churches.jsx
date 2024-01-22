@@ -308,7 +308,7 @@ export const ChurchesOnline = () =>{
                         </Slider>
                     </Box>
                 </Box>
-                </section>;
+                </section>
 
             
             <Box className="hero-left-bar"></Box>

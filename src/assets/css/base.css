@@ -1,108 +1,59 @@
-/* =================================================================== 
- *  Hesed Base Stylesheet
- *  Ver. 1.0.0
- *  07-25-2019
- *  ------------------------------------------------------------------
- *
- *  TOC:
- *	# imports 
- *	# normalize
- *	# grid v2.1.0
- *	# block grids
- *	# MISC
- *
- * =================================================================== */
-
-/* ===================================================================
- * # imports 
- *
- * ------------------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:300,400,500,600,700|Lora:400,400i,700,700i&display=swap");
 
 
-/* ==========================================================================
- * # normalize
- * normalize.css v8.0.1 | MIT License |
- * github.com/necolas/normalize.css
- *
- * -------------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------- 
- * ## document
- * ------------------------------------------------------------------- */
-
-/* 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.*/
 html {
 	line-height: 1.15;  /* 1 */
 	-webkit-text-size-adjust: 100%;  /* 2 */
 }
 
-/* ------------------------------------------------------------------- 
- * ## sections
- * ------------------------------------------------------------------- */
 
-/* Remove the margin in all browsers. */
 body {
 	margin: 0;
 }
 
-/* Render the `main` element consistently in IE. */
+
 main {
 	display: block;
 }
 
-/* Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari. */
+
 h1 {
 	font-size: 2em;
 	margin: 0.67em 0;
 }
 
-/* ------------------------------------------------------------------- 
- * ## grouping
- * ------------------------------------------------------------------- */
 
-/* 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE. */
 hr {
 	box-sizing: content-box;  /* 1 */
 	height: 0;  /* 1 */
 	overflow: visible;  /* 2 */
 }
 
-/* 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers. */
+
 pre {
 	font-family: monospace, monospace;  /* 1 */
 	font-size: 1em;  /* 2 */
 }
 
-/* ------------------------------------------------------------------- 
- * ## text-level semantics
- * ------------------------------------------------------------------- */
 
-/* Remove the gray background on active links in IE 10. */
 a {
 	background-color: transparent;
 }
 
-/* 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
+
 abbr[title] {
 	border-bottom: none;  /* 1 */
 	text-decoration: underline;  /* 2 */
 	text-decoration: underline dotted;  /* 2 */
 }
 
-/* Add the correct font weight in Chrome, Edge, and Safari. */
+
 b,
 strong {
 	font-weight: bolder;
 }
 
-/* 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers. */
+
 code,
 kbd,
 samp {
@@ -110,13 +61,12 @@ samp {
 	font-size: 1em;  /* 2 */
 }
 
-/* Add the correct font size in all browsers. */
+
 small {
 	font-size: 80%;
 }
 
-/* Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers. */
+
 sub,
 sup {
 	font-size: 75%;
@@ -133,21 +83,13 @@ sup {
 	top: -0.5em;
 }
 
-/* ------------------------------------------------------------------- 
- * ## embedded content
- * ------------------------------------------------------------------- */
 
-/* Remove the border on images inside links in IE 10. */
 img {
 	border-style: none;
 }
 
-/* ------------------------------------------------------------------- 
- * ## forms
- * ------------------------------------------------------------------- */
 
-/* 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari. */
+
 button,
 input,
 optgroup,
@@ -159,8 +101,6 @@ textarea {
 	margin: 0;  /* 2 */
 }
 
-/* Show the overflow in IE.
- * 1. Show the overflow in Edge. */
 button,
 input {
 
@@ -168,8 +108,7 @@ input {
 	overflow: visible;
 }
 
-/* Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox. */
+
 button,
 select {
 
@@ -177,7 +116,7 @@ select {
 	text-transform: none;
 }
 
-/* Correct the inability to style clickable types in iOS and Safari. */
+
 button,
 [type="button"],
 [type="reset"],
@@ -194,7 +133,7 @@ button::-moz-focus-inner,
 	padding: 0;
 }
 
-/* Restore the focus styles unset by the previous rule. */
+
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -202,15 +141,12 @@ button:-moz-focusring,
 	outline: 1px dotted ButtonText;
 }
 
-/* Correct the padding in Firefox. */
+
 fieldset {
 	padding: 0.35em 0.75em 0.625em;
 }
 
-/* 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers. */
+
 legend {
 	box-sizing: border-box;  /* 1 */
 	color: inherit;  /* 2 */
@@ -220,82 +156,66 @@ legend {
 	white-space: normal;  /* 1 */
 }
 
-/* Add the correct vertical alignment in Chrome, Firefox, and Opera. */
+
 progress {
 	vertical-align: baseline;
 }
 
-/* Remove the default vertical scrollbar in IE 10+. */
+
 textarea {
 	overflow: auto;
 }
 
-/* 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10. */
+
 [type="checkbox"],
 [type="radio"] {
 	box-sizing: border-box;  /* 1 */
 	padding: 0;  /* 2 */
 }
 
-/* Correct the cursor style of increment and decrement buttons in Chrome. */
+
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
 	height: auto;
 }
 
-/* 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari. */
+
 [type="search"] {
 	-webkit-appearance: textfield;  /* 1 */
 	outline-offset: -2px;  /* 2 */
 }
 
-/* Remove the inner padding in Chrome and Safari on macOS. */
+
 [type="search"]::-webkit-search-decoration {
 	-webkit-appearance: none;
 }
 
-/* 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari. */
+
 ::-webkit-file-upload-button {
 	-webkit-appearance: button;  /* 1 */
 	font: inherit;  /* 2 */
 }
 
-/* ------------------------------------------------------------------- 
- * ## interactive
- * ------------------------------------------------------------------- */
 
-/* Add the correct display in Edge, IE 10+, and Firefox. */
 details {
 	display: block;
 }
 
-/* Add the correct display in all browsers. */
+
 summary {
 	display: list-item;
 }
 
-/* ------------------------------------------------------------------- 
- * ## misc
- * ------------------------------------------------------------------- */
 
-/* Add the correct display in IE 10+. */
 template {
 	display: none;
 }
 
-/* Add the correct display in IE 10. */
 [hidden] {
 	display: none;
 }
 
 
-/* ===================================================================
- * # basic/base setup styles
- *
- * ------------------------------------------------------------------- */
 html {
 	font-size: 62.5%;
 	box-sizing: border-box;
@@ -318,9 +238,7 @@ body {
 	-webkit-text-size-adjust: none;
 }
 
-/* ------------------------------------------------------------------- 
- * ## Media
- * ------------------------------------------------------------------- */
+
 svg,
 img,
 video
@@ -331,9 +249,7 @@ object {
 	height: auto;
 }
 
-/* ------------------------------------------------------------------- 
- * ## Typography resets 
- * ------------------------------------------------------------------- */
+
 div,
 dl,
 dt,
@@ -388,9 +304,7 @@ li {
 	display: block;
 }
 
-/* ------------------------------------------------------------------- 
- * ## links
- * ------------------------------------------------------------------- */
+
 a {
 	text-decoration: none;
 	line-height: inherit;
@@ -400,9 +314,7 @@ a img {
 	border: none;
 }
 
-/* ------------------------------------------------------------------- 
- * ## inputs
- * ------------------------------------------------------------------- */
+
 fieldset {
 	margin: 0;
 	padding: 0;
@@ -422,18 +334,7 @@ textarea {
 }
 
 
-/* ===================================================================
- * # grid v2.1.0
- *
- *   -----------------------------------------------------------------
- * - Grid breakpoints are based on MAXIMUM WIDTH media queries, 
- *   meaning they apply to that one breakpoint and ALL THOSE BELOW IT.
- * - Grid columns without a specified width will automatically layout 
- *   as equal width columns.
- * ------------------------------------------------------------------- */
 
-/* rows
- * ------------------------------------- */
 .row {
 	width: 89%;
 	max-width: 1340px;
@@ -453,8 +354,7 @@ textarea {
 	margin-right: -20px;
 }
 
-/* columns
- * -------------------------------------- */
+
 .column {
 	-webkit-flex: 1 1 0%;
 	-ms-flex: 1 1 0%;
@@ -467,8 +367,7 @@ textarea {
 	padding: 0;
 }
 
-/* flex row containers utility classes
- * ----------------------------------------- */
+
 .row.row-wrap {
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
@@ -529,8 +428,7 @@ textarea {
 	justify-content: center;
 }
 
-/* flex item utility alignment classes
- * ----------------------------------------- */
+
 .align-center {
 	margin: auto;
 	-webkit-align-self: center;
@@ -583,8 +481,7 @@ textarea {
 	align-self: flex-end;
 }
 
-/* large screen column widths 
- * -------------------------------------- */
+
 .large-1 {
 	-webkit-flex: 0 0 8.33333%;
 	-ms-flex: 0 0 8.33333%;
@@ -671,9 +568,6 @@ textarea {
 	max-width: 100%;
 }
 
-/* ------------------------------------------------------------------- 
- * ## medium screen devices
- * ------------------------------------------------------------------- */
 @media screen and (max-width:1200px) {
 	.row .row {
 		margin-left: -16px;
@@ -772,9 +666,7 @@ textarea {
 
 }
 
-/* ------------------------------------------------------------------- 
- * ## tablets
- * ------------------------------------------------------------------- */
+
 @media screen and (max-width:800px) {
 	.tab-1 {
 		-webkit-flex: 0 0 8.33333%;
@@ -868,9 +760,7 @@ textarea {
 
 }
 
-/* ------------------------------------------------------------------- 
- * ## mobile devices 
- * ------------------------------------------------------------------- */
+
 @media screen and (max-width:600px) {
 	.row {
 		width: 100%;
@@ -981,9 +871,7 @@ textarea {
 
 }
 
-/* ------------------------------------------------------------------- 
- * ## small mobile devices <= 400px
- * ------------------------------------------------------------------- */
+
 @media screen and (max-width:400px) {
 	.row {
 		padding-left: 22px;
@@ -1009,12 +897,7 @@ textarea {
 }
 
 
-/* ===================================================================
- * # block grids
- *
- * -------------------------------------------------------------------
- * Equally-sized columns define at parent/row level.
- * ------------------------------------------------------------------- */
+
 .block-large-1-8 > .column {
 	-webkit-flex: 0 0 12.5%;
 	-ms-flex: 0 0 12.5%;
@@ -1064,9 +947,7 @@ textarea {
 	max-width: 100%;
 }
 
-/* ------------------------------------------------------------------- 
- * ## block grids - medium screen devices
- * ------------------------------------------------------------------- */
+
 @media screen and (max-width:1200px) {
 	.block-medium-1-8 > .column {
 		-webkit-flex: 0 0 12.5%;
@@ -1119,9 +1000,7 @@ textarea {
 
 }
 
-/* ------------------------------------------------------------------- 
- * ## block grids - tablets
- * ------------------------------------------------------------------- */
+
 @media screen and (max-width:800px) {
 	.block-tab-1-8 > .column {
 		-webkit-flex: 0 0 12.5%;
@@ -1174,9 +1053,7 @@ textarea {
 
 }
 
-/* ------------------------------------------------------------------- 
- * ## block grids - mobile devices
- * ------------------------------------------------------------------- */
+
 @media screen and (max-width:600px) {
 	.block-mob-1-8 > .column {
 		-webkit-flex: 0 0 12.5%;
@@ -1229,9 +1106,7 @@ textarea {
 
 }
 
-/* ------------------------------------------------------------------- 
- * ## block grids - small mobile devices <= 400px
- * ------------------------------------------------------------------- */
+
 @media screen and (max-width:400px) {
 	.stack > .column {
 		-webkit-flex: 0 0 100%;
@@ -1247,18 +1122,14 @@ textarea {
 }
 
 
-/* ===================================================================
- * # MISC
- *
- * ------------------------------------------------------------------- */
+
 .h-group:after {
 	content: "";
 	display: table;
 	clear: both;
 }
 
-/* misc helper classes
- * -------------------------------------- */
+
 .is-hidden {
 	display: none;
 }
@@ -1316,4 +1187,3 @@ textarea {
 	float: right;
 }
 
-/*# sourceMappingURL=base.css.map */
