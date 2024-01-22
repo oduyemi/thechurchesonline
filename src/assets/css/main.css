@@ -2463,6 +2463,8 @@ html.no-csstransitions .hero-content {
 @media screen and (max-width:500px) {
   .hero-content {
     width: 86%;
+    position: relative;
+    top: -4%;
   }
 
   .hero-scroll {
