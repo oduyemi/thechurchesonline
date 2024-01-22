@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+@import url("./assets/css/base.css");
+@import url("./assets/css/main.css");
+
+
 *{
   box-sizing: border-box;
   margin: 0%;
@@ -15,7 +19,14 @@ body{
 }
 
 body.home {
+  background-image: url("./assets/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   overflow: hidden
+}
+
+a{
+  text-decoration: none !important;
 }
 
 
@@ -23,3 +34,83 @@ img {
 	border-style: none;
 }
 
+
+
+
+
+@media (max-width: 768px) {
+  .mobile-menu-button {
+    display: block;
+    position: relative;
+    /* right: 15%; */
+    top: -7%;
+   width: 100%;
+  }
+
+  #mobile-menu{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.99);
+    top: 40px; 
+    right: 0;
+    left: 0;
+    z-index: 999;
+  }
+  
+
+  #mobile-menu:hover{
+    color: #C32F27;
+  }
+  
+  .nav-menu-wrapper {
+    display: none;
+  }
+
+  .nav-icon {
+    display: block;
+    margin: 2%; 
+    padding: 2%;
+  }
+
+  .logo {
+    width: 90%;
+    margin-top: -4%;
+    margin-left: -36%;
+  }
+
+  .mobile-menu-content {
+    padding: 20px;
+  }
+
+  .close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #C32F27;
+    margin-bottom: 10px;
+  }
+
+
+  .mobile-menu-link {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+
+  .mobile-menu-link:hover {
+    background: #eee;
+  }
+
+  .more{
+    position: relative;
+    top: -1.5%;
+    font-size: smaller;
+  }
+}

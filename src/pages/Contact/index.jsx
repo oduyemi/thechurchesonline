@@ -1,10 +1,10 @@
-
+import { ContactUs } from "../../components/Contact"
 
 
 
 const Contact = () => {
     return(
-        <></>
+        <ContactUs />
     )
 }
 

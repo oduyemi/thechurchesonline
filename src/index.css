@@ -1,1 +1,35 @@
+/* .featured{
+    position: relative;
+    left:3%;
+} */
 
+.more{
+    float: right;
+    text-decoration: none;
+    color:#260970;
+    position: relative;
+    top: -8%;
+    right:5%
+}
+
+.more:hover, .lists:hover{
+    color: #3b0d11 !important;
+}
+
+
+#events{
+    color: #260970;
+    position:relative;
+    left:5%;
+}
+
+
+.card-slide{
+    padding: 10px;
+    margin: 10px;
+}
+
+.lists{
+    position: relative;
+    left: 7%
+}

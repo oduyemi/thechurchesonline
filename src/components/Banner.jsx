@@ -1,7 +1,9 @@
 
 import { Box, Typography } from "@mui/material";
-import heroImage from "../assets/hero.jpg";
-import { Link } from "@mui/material"
+import heroImage from "../assets/ho.jpg";
+import { Link } from "react-router-dom";
+import "animate.css"
+
 
 
 
@@ -11,27 +13,41 @@ export const Banner = () => {
             <Box
                 className="s-hero"
                 sx={{
-                    backgroundImage: `url(${heroImage})`,
-                    backgroundSize: "contain"
+                    position: "relative",
+                    width: "100%",
+                    height: "100vh",
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${heroImage})`,
+                    backgroundSize: "contain",
+                    backgroundRepeat: "noRepeat", 
+                    overflow: "hidden",
+                    "&::before": {
+                        content: "''",
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        zIndex: -1,
+                        animation: "$slideshow 12s infinite",                 
+                }
                 }}
-                // data-natural-width="3000"
-                // data-natural-height="2000"
-                // data-position-y="center">
-                >
+                data-natural-width="3000"
+                data-natural-height="2000"
+                data-position-y="center">
 
                 <Box className="hero-left-bar"></Box>
-                <Box className="row hero-content">
+                <Box className="row hero-content animate__animated animate__fadeIn">
                     <Box className="column large-full hero-content__text">
                         <Typography variant="h1">
-                            We Are <br />
-                            Pencils In The <br />
-                            Hand Of The <br />
-                            Almighty
+                            Go Into <br />
+                            All The <br />
+                            World And <br />
+                            Make Disciples
                         </Typography>
 
                         <Box className="hero-content__buttons">
-                            <Link href="/events" className="btn btn--stroke">Upcoming Events</Link>
-                            <Link href="/about" className="btn btn--stroke">About Us</Link>
+                            <Link to="/churches" className="btn btn--stroke">Browse Churches</Link>
+                            <Link to="/events" className="btn btn--stroke">Church Events</Link>
                         </Box>
                     </Box> 
 
@@ -40,22 +56,15 @@ export const Banner = () => {
                 <ul className="hero-social">
                     <li className="hero-social__title">Follow Us</li>
                     <li>
-                        <Link href="#0" title="">Facebook</Link>
+                        <Link to="#" title="">Facebook</Link>
                     </li>
                     <li>
-                        <Link href="#0" title="">YouTube</Link>
+                        <Link to="#" title="">YouTube</Link>
                     </li>
                     <li>
-                        <Link href="#0" title="">Instagram</Link>
+                        <Link to="#" title="">Instagram</Link>
                     </li>
                 </ul>
-
-                <Box className="hero-scroll">
-                    <Link href="#about" className="scroll-link smoothscroll">
-                        Scroll For More
-                    </Link>
-                </Box>
-
             </Box>
         </>
     )

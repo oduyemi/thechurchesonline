@@ -10,7 +10,7 @@ module.exports = {
       },
       colors:{
         tomato: "#E50914",
-        marigold: "#ffbe0b",
+        goldie: "#EE964B",
       }
     },
   },
