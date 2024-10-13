@@ -6,7 +6,7 @@
 .more{
     float: right;
     text-decoration: none;
-    color:#260970;
+    color:#101419;
     position: relative;
     top: -8%;
     right:5%
@@ -18,7 +18,7 @@
 
 
 #events{
-    color: #260970;
+    color: #fff;
     position:relative;
     left:5%;
 }

@@ -1,16 +1,22 @@
+import React from "react";
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { CssBaseline } from '@mui/material';
 import { ChurchesOnline } from "../../components/Churches";
-import { Footer } from "../../components/Footer";
 
 
+const theme = createTheme({
+    palette: {
+      mode: 'dark'
+    },
+  });
 
+  
 const Churches = () => {
     return(
-    <>
-        <ChurchesOnline />
-        <Footer />
-    </>
-
-        
+        <ThemeProvider theme={theme}>
+        <CssBaseline />
+          <ChurchesOnline />
+      </ThemeProvider>
     )
 }
 

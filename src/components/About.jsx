@@ -23,7 +23,10 @@ export const AboutContent = () => {
                     <Box className="row animate__animated animate__fadeIn">
                         <Box className="column">
 
-                        <Typography variant="h5" paragraph className="lead drop-cap">
+                        <Typography variant="h5" 
+                            paragraph 
+                            className="lead text-white focuscaption"
+                        >
                             We are the body. Christ is the head. The churches Online is an
                             extension of the body of Christ. It is a platform where believers
                             can connect to local churches as the body. Would you like a feature
@@ -33,7 +36,7 @@ export const AboutContent = () => {
 
                             <Box className="row">
                                 <Box className="column large-half medium-full">
-                                    <Typography variant="h2" className="text-[#494331]">Our Purpose.</Typography>
+                                    <Typography variant="h2" className="text-tomato">Our Purpose.</Typography>
                                     <Typography variant="h5" paragraph>
                                         The unity of the church is vital for our endurance. We&apos;re not
                                         meant to live the Christian life in isolation. And it&apos;s vital
@@ -48,7 +51,7 @@ export const AboutContent = () => {
                                 </Box>
 
                                 <Box className="column large-half medium-full">
-                                    <Typography variant="h2" className="text-[#494331]">Our Mission.</Typography>
+                                    <Typography variant="h2" className="text-tomato">Our Mission.</Typography>
                                     <Typography variant="h5" paragraph>
                                         Simply put, the mission of the church is the Great Commission—what
                                         Philip Ryken calls “a clear, unambiguous statement of [the church's]
@@ -64,23 +67,23 @@ export const AboutContent = () => {
                             </Box>
 
                             <blockquote cite="http://where-i-got-my-info-from.com">
-                                <Typography variant="h6" paragraph>
+                                <Typography variant="h6" paragraph className="text-[#BCA0BC]">
                                 For God so loved the world, that he gave his only Son, that whoever believes in 
                                 him should not perish but have eternal life. For God did not send his Son into 
                                 the world to condemn the world, but in order that the world might be 
                                 saved through him.
                                 </Typography>
                                 <cite>
-                                    <Link to="#">John 3:16-17 ESV</Link>
+                                    <Link to="#" className="text-[#A9ACA9]">John 3:16-17 ESV</Link>
                                 </cite>
                             </blockquote>
 
                             <br />
 
-                            <Typography variant="h2" className="text-[#494331]">Our Values.</Typography>
+                            <Typography variant="h2" className="text-tomato">Our Values.</Typography>
                             <Box className="row block-large-1-2 block-1000-full block-list">
                                 <Box className="column block-list__item">
-                                    <Typography variant="h6" className="text-[#3B0D11]">Identity in Christ</Typography>
+                                    <Typography variant="h6" className="text-[#F9B9F2]">Identity in Christ</Typography>
 
                                     <Typography variant="h5" paragraph>
                                         In our everyday lives, we identify with a person, organization,
@@ -92,7 +95,7 @@ export const AboutContent = () => {
                                 </Box>
 
                                 <Box className="column block-list__item">
-                                    <Typography variant="h6" className="text-[#3B0D11]">Church Is One Body</Typography>
+                                    <Typography variant="h6" className="text-[#F9B9F2]">Church Is One Body</Typography>
 
                                     <Typography variant="h6" paragraph>
                                         Every human body is one thing, one body, one person. This is true
@@ -106,9 +109,9 @@ export const AboutContent = () => {
                                 </Box>
 
                                 <Box className="column block-list__item">
-                                    <Typography variant="h6" className="text-[#3B0D11]">Kingdom Culture</Typography>
+                                    <Typography variant="h6" className="text-[#F9B9F2]">Kingdom Culture</Typography>
 
-                                    <Typography variant="h6">
+                                    <Typography variant="h6" paragraph>
                                         There are many earthly kingdoms, all divided from one another.
                                         There are also divisions within earthly kingdoms which result in
                                         coups and revolutions. God's Kingdom is a united Kingdom. One body.
@@ -119,7 +122,7 @@ export const AboutContent = () => {
                                 </Box>
 
                                 <Box className="column block-list__item">
-                                    <Typography variant="h6" className="text-[#3B0D11]">Spirit Led Life</Typography>
+                                    <Typography variant="h6" className="text-[#F9B9F2]">Spirit Led Life</Typography>
                                     <Typography variant="h6" paragraph>
                                     The Spirit-led life is a life of conflict, because it is in
                                     constant combat with the old ways of the flesh that continue to
@@ -134,11 +137,11 @@ export const AboutContent = () => {
 
                             <br />
 
-                            <Typography variant="h2"className="text-[#494331]">What We Believe.</Typography>
+                            <Typography variant="h2"className="text-tomato">What We Believe.</Typography>
 
                             <Box className="row block-large-1-2 block-1000-full block-list">
                                 <Box className="column block-list__item">
-                                    <Typography variant="h6" className="text-[#3B0D11]">One God: Father Son and Holy Spirit.</Typography>
+                                    <Typography variant="h6" className="text-[#F9B9F2]">One God: Father Son and Holy Spirit.</Typography>
                                     <Typography variant="h6" paragraph>
                                     We believe in God as Father, Son and Holy Spirit is at the heart
                                     of our faith. Christians believe that Jesus is God&apos;s Son.
@@ -151,7 +154,7 @@ export const AboutContent = () => {
                                     </Typography>
                                 </Box>
                                 <Box className="column block-list__item">
-                                    <Typography variant="h6" className="text-[#3B0D11]">
+                                    <Typography variant="h6" className="text-[#F9B9F2]">
                                         The Word of God.
                                     </Typography>
                                     <Typography variant="h6" paragraph>
@@ -160,7 +163,7 @@ export const AboutContent = () => {
                                     </Typography>
                                 </Box>
                                 <Box className="column block-list__item">
-                                    <Typography variant="h6" className="text-[#3B0D11]">
+                                    <Typography variant="h6" className="text-[#F9B9F2]">
                                     The Power of The Holy Spirit.
                                     </Typography>
                                     <Typography variant="h6" paragraph>
@@ -171,7 +174,7 @@ export const AboutContent = () => {
                                     </Typography>
                                 </Box>
                                 <Box className="column block-list__item">
-                                    <Typography variant="h6" className="text-[#3B0D11]">
+                                    <Typography variant="h6" className="text-[#F9B9F2]">
                                         Devine Purpose.
                                     </Typography>
                                     <Typography variant="h6" paragraph>

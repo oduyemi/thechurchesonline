@@ -53,7 +53,7 @@ export const Lists = () =>{
             </section> 
             <section className="page-content">
                 <Box maxWidth="l" className="container mx-auto my-5">
-                    <Typography variant="h2" className="pl-8" id="events">
+                    <Typography variant="h2" className="pl-8 text-white" id="events">
                         Featured Churches
                     </Typography>
                     <Typography

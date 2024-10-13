@@ -22,7 +22,7 @@ export const UpcomingEvents = () => {
                 <Box className="row wide block-large-1-2 block-900-full events-list">
                     <Box className="column events-list__item">
                         <Typography variant="h3" className="display-1 events-list__item-title">
-                            <Link to="#0" title="">Celebrate Jesus</Link>
+                            <Link to="#0" title="" className="text-tomato">Celebrate Jesus</Link>
                         </Typography>
                         <img src={Event1Image} alt="event1" />
                         <ul className="events-list__meta">
