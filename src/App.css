@@ -87,10 +87,6 @@ img {
   border: none;
 }
 
-.header-logo img {
-  width: 108px;
-  height: 28px;
-}
 
 .header-nav-wrap {
   z-index: 101;
@@ -268,7 +264,6 @@ img {
   }
 
   .logo {
-    width: 90%;
     margin-top: -4%;
     margin-left: -36%;
   }

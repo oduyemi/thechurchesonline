@@ -43,7 +43,7 @@ export const Header = () => {
     <header className="s-header">
       <Box className="header-logo">
         <Link className="logo" href="/">
-          <img src={require("../assets/logo/logo.png")} className="w-40 h-40" alt="logo" />
+          <img src={require("../assets/logo/logo.png")} width="6%" alt="logo" />
         </Link>
       </Box>
  
