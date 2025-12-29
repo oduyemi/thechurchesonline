@@ -1,7 +1,7 @@
 import React from "react";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';
-import { ChurchesOnline } from "../../components/Churches";
+import { ChurchesOnline } from "../../components/OldChurches";
 
 
 const theme = createTheme({

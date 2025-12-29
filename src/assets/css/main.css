@@ -36,7 +36,7 @@ body {
 }
 
 body {
-  background: #101419;
+  background: #001021;
   font-family: "Lora", serif;
   font-size: 2rem;
   font-style: normal;
@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-style: normal;
-  color: #000000;
+  color: #fff;
   font-variant-ligatures: common-ligatures;
   text-rendering: optimizeLegibility;
 }
@@ -149,7 +149,7 @@ p.lead {
   font-size: 2.8rem;
   line-height: 1.857;
   margin-bottom: 3.6rem;
-  color: #000000;
+  color: #fff;
 }
 
 @media screen and (max-width:1200px) {
@@ -194,7 +194,7 @@ small {
 blockquote {
   margin: 4rem 0;
   padding: 4rem 4rem;
-  border-left: 4px solid black;
+  border-left: 4px solid white;
   position: relative;
 }
 
@@ -218,7 +218,7 @@ blockquote p {
   padding: 0;
   font-size: 2.8rem;
   line-height: 1.857;
-  color: #000000;
+  color: #fff;
 }
 
 @media screen and (max-width:1200px) {
@@ -284,7 +284,7 @@ code {
   white-space: nowrap;
   background: #efefef;
   border: 1px solid #d3d3d3;
-  color: #000000;
+  color: #fff;
   border-radius: 3px;
 }
 
@@ -313,7 +313,7 @@ dfn[title] {
 
 mark {
   background: #fff099;
-  color: #000000;
+  color: #fff;
 }
 
 hr {
@@ -435,7 +435,7 @@ td {
 }
 
 th {
-  color: #000000;
+  color: #fff;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
@@ -702,7 +702,7 @@ select {
   padding: 1.8rem 0 1.5rem;
   border: 0;
   outline: none;
-  color: #000000;
+  color: #fff;
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   line-height: 3.2rem;
@@ -738,8 +738,8 @@ select {
 }
 
 .ss-custom-select::after {
-  border-bottom: 2px solid #000000;
-  border-right: 2px solid #000000;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
   content: "";
   display: block;
   height: 8px;
@@ -769,8 +769,8 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  color: #000000;
-  border-bottom: 1px solid #000000;
+  color: #fff;
+  border-bottom: 1px solid #fff;
 }
 
 label,
@@ -780,7 +780,7 @@ legend {
   font-size: 1.4rem;
   margin-bottom: .8rem;
   line-height: 1.714;
-  color: #000000;
+  color: #fff;
   display: block;
 }
 
@@ -907,8 +907,8 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  background-color: #101419;
-  border-color: #000000;
+  background-color: #001021;
+  border-color: #fff;
   color: #D3BCC0;
   outline: 0;
 }
@@ -935,8 +935,8 @@ button.btn--primary:focus,
 input[type="submit"].btn--primary:focus,
 input[type="reset"].btn--primary:focus,
 input[type="button"].btn--primary:focus {
-  background: #000000;
-  border-color: #000000;
+  background: #fff;
+  border-color: #fff;
 }
 
 /* button modifiers
@@ -968,14 +968,14 @@ button.btn--large {
 .btn--stroke,
 button.btn--stroke {
   background: transparent !important;
-  border: 0.2rem solid #000000;
-  color: #000000;
+  border: 0.2rem solid #fff;
+  color: #fff;
 }
 
 .btn--stroke:hover,
 button.btn--stroke:hover {
-  background: #000000 !important;
-  border: 0.2rem solid #000000;
+  background: #fff !important;
+  border: 0.2rem solid #fff;
   color: #D3BCC0;
 }
 
@@ -1010,7 +1010,7 @@ input::-moz-focus-inner {
   padding: 0 0.125em 0 0;
   text-transform: uppercase;
   background: transparent;
-  color: #000000;
+  color: #fff;
 }
 
 /* line definition style 
@@ -1136,7 +1136,7 @@ input::-moz-focus-inner {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   border: none;
-  color: #000000;
+  color: #fff;
 }
 
 .stats-tabs li a:hover {
@@ -1176,7 +1176,7 @@ input::-moz-focus-inner {
   top: -4rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  color: #000000;
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: .2rem;
   font-size: 1.4rem;
@@ -1184,7 +1184,7 @@ input::-moz-focus-inner {
 }
 
 .skill-bars li .progress {
-  background: #000000;
+  background: #fff;
   position: relative;
   height: 100%;
 }
@@ -1198,7 +1198,7 @@ input::-moz-focus-inner {
   color: #D3BCC0;
   font-size: 1.1rem;
   line-height: 1;
-  background: #000000;
+  background: #fff;
   padding: .8rem .8rem;
   border-radius: 3px;
 }
@@ -1211,7 +1211,7 @@ input::-moz-focus-inner {
   width: 0;
   height: 0;
   border: 5px solid transparent;
-  border-top-color: #000000;
+  border-top-color: #fff;
   content: "";
 }
 
@@ -1411,18 +1411,18 @@ input::-moz-focus-inner {
   padding: .2rem 1.2rem;
   height: 3.6rem;
   margin: .2rem .2rem;
-  color: #000000;
+  color: #fff;
   transition: all, .3s, ease-in-out;
 }
 
 .pgn__num:hover {
   background: #e0e0e0;
-  color: #000000;
+  color: #fff;
 }
 
 .pgn .current,
 .pgn .current:hover {
-  background-color: #101419;
+  background-color: #001021;
   color: white;
 }
 
@@ -1546,7 +1546,7 @@ input::-moz-focus-inner {
 }
 
 .events-list__item-title a {
-  color: #000000;
+  color: #fff;
   border-bottom: 1px solid transparent;
 }
 
@@ -1564,7 +1564,7 @@ input::-moz-focus-inner {
   line-height: 1.667;
   text-transform: uppercase;
   letter-spacing: .25rem;
-  color: #000000;
+  color: #fff;
   margin-left: 0;
   border-top: 1px solid #e0e0e0;
 }
@@ -1729,14 +1729,14 @@ input::-moz-focus-inner {
 }
 
 .no-js .s-hero {
-  background: #000000;
+  background: #fff;
 }
 
 
 .hero-left-bar {
   height: 100%;
   width: 8rem;
-  background-color: #101419;
+  background-color: #001021;
   opacity: .9;
   position: fixed;
   top: 0;
@@ -1800,7 +1800,7 @@ input::-moz-focus-inner {
 .hero-content__buttons .btn:hover,
 .hero-content__buttons .btn:focus {
   background-color: #D3BCC0 !important;
-  color: #000000;
+  color: #fff;
 }
 
 
@@ -2345,7 +2345,7 @@ html.no-csstransitions .hero-content {
 }
 
 .s-events .subhead {
-  color: #000000;
+  color: #fff;
 }
 
 .events-header {
@@ -2442,7 +2442,7 @@ html.no-csstransitions .hero-content {
 .s-social {
   padding-top: 10.4rem;
   padding-bottom: 9.6rem;
-  background-color: #101419;
+  background-color: #001021;
 }
 
 .social-content {
@@ -2569,7 +2569,7 @@ html.no-csstransitions .hero-content {
 .s-footer {
   padding-top: 12rem;
   padding-bottom: 8rem;
-  background-color: #3b0d11;
+  background-color: #333;
   font-family: "Open Sans", sans-serif;
   font-size: 1.7rem;
   line-height: 1.882;
@@ -2594,8 +2594,8 @@ html.no-csstransitions .hero-content {
 
 .s-footer .btn--footer:hover,
 .s-footer .btn--footer:focus {
-  border-color: #000000;
-  background-color: #101419;
+  border-color: #fff;
+  background-color: #001021;
 }
 
 .s-footer .row .column:first-child {
@@ -2612,7 +2612,7 @@ html.no-csstransitions .hero-content {
 }
 
 .footer-logo img {
-  width: 138px;
+  /* width: 120px; */
   height: 36px;
 }
 
@@ -2673,7 +2673,7 @@ html.no-csstransitions .hero-content {
 
 .ss-go-top a {
   display: block;
-  background-color: #101419;
+  background-color: #001021;
   text-decoration: none;
   margin: 0;
   padding: 0;
@@ -2783,7 +2783,7 @@ html.no-csstransitions .hero-content {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #101419;
+  background-color: #001021;
   opacity: .7;
 }
 
@@ -2793,7 +2793,7 @@ html.no-csstransitions .hero-content {
   left: 0;
   width: 100%;
   height: 100%;
-  background: black;
+  background: #fff;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 90%);
   opacity: .5;
 }
@@ -2835,7 +2835,7 @@ html.no-csstransitions .hero-content {
 .page-content {
   padding-top: 12rem;
   padding-bottom: 16rem;
-  background-color: #101419;
+  background-color: #001021;
   color: #fff !important;
 }
 
