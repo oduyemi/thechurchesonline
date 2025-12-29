@@ -51,7 +51,7 @@ export const Header = () => {
                   : "text-white",
               position: "relative",
               "&::after": {
-                content: '""',
+                content: "''",
                 position: "absolute",
                 left: 0,
                 bottom: -6,
